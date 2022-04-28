@@ -1,8 +1,21 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(204, 228, 247) 11.2%,
+    rgb(237, 246, 250) 100.2%
+  );
+}
+#navbar {
+  padding: 0;
+  border-radius: 0.5%;
+}
 .container {
   border: solid;
-  border-radius: 0.5;
+  border-radius: 0.5%;
   margin: 100px auto;
   font-family: nunito;
+  width: fit-content;
+  height: fit-content;
 }
 #currentCity {
   text-decoration: underline;
@@ -30,6 +43,22 @@ ul {
 }
 
 #fiveDayForecast {
-  text-decoration: underline;
   font-size: 25px;
+  line-height: 2;
+  text-align: center;
+  border: solid;
+  margin: 10px;
+}
+#dayOne,
+#dayTwo,
+#dayThree,
+#dayFour,
+#dayFive {
+  text-decoration: underline;
+}
+
+a {
+  font-family: nunito;
+  display: block;
+  text-align: center;
 }
