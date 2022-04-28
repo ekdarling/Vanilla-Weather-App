@@ -7,22 +7,29 @@
 #currentCity {
   text-decoration: underline;
   line-height: 2;
+  font-size: 30px;
+}
+
+#time {
+  font-size: 20px;
 }
 
 #currentTemp {
   text-align: right;
   line-height: 2;
-}
-#time {
+  font-size: 35px;
 }
 
-#fiveDayForecast {
-  text-decoration: underline;
-}
 ul {
   list-style: none;
   display: block;
   text-align: right;
   padding: 0;
   margin: 0;
+  font-size: 18px;
+}
+
+#fiveDayForecast {
+  text-decoration: underline;
+  font-size: 25px;
 }
