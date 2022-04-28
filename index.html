@@ -10,33 +10,64 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/app.js" />
-    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="app.js" />
+    <link rel="stylesheet" href="Vanilla-Weather-App/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c94722341.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Darling Weather App</title>
   </head>
   <body>
+    <div class="container" id="navbar">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="City Name"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Go</button>
+          </form>
+        </div>
+      </nav>
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col-3" id="currentCity">Indianapolis</div>
-        <div class="col-3" id="currentTemp">58°|36°</div>
+        <div class="col-8" id="currentCity">Indianapolis,</div>
+        <div class="col-4" id="currentTemp">58° | 36° F</div>
       </div>
-      <div class="row" id="time">1:53pm</div>
-      <div class="row" id="weatherCondition">
-        <div class="col" id="currentConditions">
+      <div class="row">
+        <div class="col-8" id="time">1:53pm</div>
+        <div class="col-4" id="currentConditions">
           <ul>
-            <li>Humidity 43%</li>
-            <li>wind 16mph</li>
-            <li>Chance of percipitation: 5%</li>
+            <li>Humidity: 43%</li>
+            <li>Wind: 16mph</li>
+            <li>Percipitation: 5%</li>
           </ul>
         </div>
       </div>
-      <div class="row" id="fiveDayForecast">
+      <div class="row row-cols-5" id="fiveDayForecast">
         <div class="col" id="dayOne">Mon</div>
         <div class="col" id="dayTwo">Tues</div>
         <div class="col" id="dayThree">Wed</div>
         <div class="col" id="dayFour">Thurs</div>
         <div class="col" id="dayFive">Fri</div>
+        <div class="col" id="oneTemp">61­°</div>
+        <div class="col" id="twoTemp">70°</div>
+        <div class="col" id="threeTemp">58­°</div>
+        <div class="col" id="fourTemp">61­°</div>
+        <div class="col" id="fiveTemp">46°</div>
       </div>
     </div>
     <a href="https://github.com/ekdarling/Vanilla-Weather-App.git">
