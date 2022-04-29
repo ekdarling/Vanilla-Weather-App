@@ -18,7 +18,7 @@ body {
   width: fit-content;
   height: fit-content;
 }
-#currentCity {
+#current-city {
   text-decoration: underline;
   line-height: 2;
   font-size: 30px;
@@ -28,7 +28,7 @@ body {
   font-size: 25px;
 }
 
-#currentTemp {
+#current-temp {
   text-align: right;
   line-height: 2;
   font-size: 35px;
@@ -43,18 +43,18 @@ ul {
   font-size: 18px;
 }
 
-#fiveDayForecast {
+#five-day-forecast {
   font-size: 25px;
   line-height: 2;
   text-align: center;
   border: solid;
   margin: 10px;
 }
-#dayOne,
-#dayTwo,
-#dayThree,
-#dayFour,
-#dayFive {
+#day-one,
+#day-two,
+#day-three,
+#day-four,
+#day-five {
   text-decoration: underline;
 }
 
