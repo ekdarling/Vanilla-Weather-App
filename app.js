@@ -47,10 +47,19 @@ function displayCurrentTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "5921d610e62ddd7cd6382a774739ccc4";
-let cityName = "Indianapolis";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`;
+function searchNewCity(city) {
+  let apiKey = "5921d610e62ddd7cd6382a774739ccc4";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayCurrentTemperature);
+}
+function findCity(event) {
+  event.preventDefault();
+  cityName = document.querySelector("#search-form").value;
+  searchNewCity(cityName);
+}
 
-axios.get(apiUrl).then(displayCurrentTemperature);
+let form = document.querySelector("form");
+form.addEventListener("submit", findCity);

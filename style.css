@@ -21,17 +21,21 @@ body {
 #current-city {
   text-decoration: underline;
   line-height: 2;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 #date {
-  font-size: 25px;
+  font-size: 23px;
 }
 
-.col-3 {
+.col-4 {
   text-align: right;
   line-height: 2;
   font-size: 35px;
+}
+
+#icon {
+  display: block;
 }
 
 ul {
