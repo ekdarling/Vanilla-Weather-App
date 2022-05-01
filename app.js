@@ -33,6 +33,7 @@ function displayCurrentTemperature(response) {
   let cityElement = document.querySelector("#current-city");
   let temperatureElement = document.querySelector("#current-temp");
   let dateElement = document.querySelector("#date");
+  let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let feelsLikeElement = document.querySelector("#feels-like");
@@ -40,6 +41,7 @@ function displayCurrentTemperature(response) {
   cityElement.innerHTML = response.data.name;
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
