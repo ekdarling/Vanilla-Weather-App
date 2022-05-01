@@ -24,11 +24,11 @@ body {
   font-size: 30px;
 }
 
-#time {
+#date {
   font-size: 25px;
 }
 
-#current-temp {
+.col-3 {
   text-align: right;
   line-height: 2;
   font-size: 35px;
