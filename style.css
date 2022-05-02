@@ -47,21 +47,18 @@ ul {
   font-size: 18px;
 }
 
-#five-day-forecast {
-  font-size: 25px;
-  line-height: 2;
+#five-day-forecast,
+#extended-forecast {
+  font-size: 20px;
+  line-height: 1.5;
   text-align: center;
   border: solid;
   margin: 10px;
 }
-#day-one,
-#day-two,
-#day-three,
-#day-four,
-#day-five {
-  text-decoration: underline;
-}
 
+.row {
+  
+}
 a {
   font-family: nunito;
   display: block;
