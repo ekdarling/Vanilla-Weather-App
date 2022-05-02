@@ -24,7 +24,7 @@
     />
     <title>Darling Weather App</title>
 
-    <script src="app.js"></script>
+    <script src="Vanilla-Weather-App/app.js"></script>
   </head>
   <body>
     <div class="container" id="navbar">
@@ -47,20 +47,31 @@
       <div class="row">
         <div class="col-7" id="current-city">Indianapolis</div>
         <div class="col-1"><img src="" id="icon" alt="" /></div>
-        <div class="col-4"><span id="current-temp"></span> ° F</div>
+        <div class="col-4"><span id="current-temp"></span> 64° F</div>
       </div>
       <div class="row">
         <div class="col-8" id="date"></div>
         <div class="col-4" id="current-conditions">
           <ul>
-            <li id="description">Currently:</li>
+            <li id="description">Currently: Clear </li>
             <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span>mph</li>
-            <li>Feels Like: <span id="feels-like"></span>°</li>
+            <li>Wind: <span id="wind"></span> 10mph</li>
+            <li>Feels Like: <span id="feels-like"></span>56°</li>
           </ul>
         </div>
       </div>
       <div class="weather-forecast" id="five-day-forecast">
+             <div class="row row-cols-5">
+        <div class="col" id="day-one">Mon</div>
+        <div class="col" id="day-two">Tues</div>
+        <div class="col" id="day-three">Wed</div>
+        <div class="col" id="day-four">Thurs</div>
+        <div class="col" id="day-five">Fri</div>
+        <div class="col" id="one-temp">61­°</div>
+        <div class="col" id="two-temp">70°</div>
+        <div class="col" id="three-temp">58­°</div>
+        <div class="col" id="four-temp">61­°</div>
+        <div class="col" id="five-temp">46°</div>
       </div>
     </div>
     <a href="https://github.com/ekdarling/Vanilla-Weather-App.git">
