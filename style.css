@@ -37,6 +37,9 @@ body {
 #icon {
   display: block;
 }
+#description {
+  text-transform: capitalize;
+}
 
 ul {
   list-style: none;
