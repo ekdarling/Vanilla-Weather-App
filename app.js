@@ -110,3 +110,5 @@ function findCity(event) {
 
 let form = document.querySelector("form");
 form.addEventListener("submit", findCity);
+
+searchNewCity("Indianapolis");
